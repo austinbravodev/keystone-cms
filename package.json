@@ -1,0 +1,28 @@
+{
+  "name": "keystone_cms",
+  "scripts": {
+    "reset-db": "keystone prisma db push --force-reset",
+    "schemas": "keystone build --no-ui",
+    "generate": "keystone prisma migrate dev",
+    "dev": "keystone dev --no-db-push",
+    "devPush": "keystone dev",
+    "build": "keystone build",
+    "migrate": "keystone prisma migrate deploy",
+    "start": "keystone start"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.2",
+    "@keystone-6/auth": "^7.0.2",
+    "@keystone-6/core": "^5.7.0",
+    "@keystone-6/fields-document": "^8.0.2",
+    "@redis/client": "^1.5.13",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.0.3"
+  }
+}

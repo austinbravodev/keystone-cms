@@ -1,0 +1,21 @@
+NODE_ENV=development
+PORT=5555
+
+DATABASE_PROVIDER=sqlite
+# for schemas, generate scripts
+# DATABASE_PROVIDER=postgresql
+DATABASE_URL=file:./keystone.db
+
+S3_STORAGE=false
+
+IMAGES_URL=http://localhost:5555/images/
+# minimum 32 characters
+COOKIE_SECRET=cookiesecretneedstobeatleastthirtytwocharacterslong
+GRAPHQL_CORS_ORIGINS=http://localhost:3000
+SERVER_CORS_ORIGINS=http://localhost:3000
+FRONTEND_URL=http://localhost:3000/
+SECURE_SESSIONS=false
+API_KEY_CUSTOM=topsecret
+FUNDIST_URL=
+PRIMARY_ORG=
+SECONDARY_ORG=
