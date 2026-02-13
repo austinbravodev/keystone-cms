@@ -4,7 +4,6 @@ npm-debug.log*
 .keystone
 .env
 .env.production
-public
 oldDatabases
 notes
 admin/configOld.tsx
