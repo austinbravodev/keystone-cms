@@ -127,30 +127,30 @@ export default withAuth(
         }),
     ui: {
       isAccessAllowed: (context) => !!context.session?.data.id,
-      getAdditionalFiles: [
-        async () => {
-          return [
-            {
-              mode: "copy",
-              inputPath: `${
-                process.env.NODE_ENV === "production"
-                  ? "/app/"
-                  : __dirname + "/../"
-              }customStatic/script.js`,
-              outputPath: "public/script.js",
-            },
-            {
-              mode: "copy",
-              inputPath: `${
-                process.env.NODE_ENV === "production"
-                  ? "/app/"
-                  : __dirname + "/../"
-              }customStatic/logo.svg`,
-              outputPath: "public/logo.svg",
-            },
-          ];
-        },
-      ],
+      // getAdditionalFiles: [
+      //   async () => {
+      //     return [
+      //       {
+      //         mode: "copy",
+      //         inputPath: `${
+      //           process.env.NODE_ENV === "production"
+      //             ? "/app/"
+      //             : __dirname + "/../"
+      //         }customStatic/script.js`,
+      //         outputPath: "public/script.js",
+      //       },
+      //       {
+      //         mode: "copy",
+      //         inputPath: `${
+      //           process.env.NODE_ENV === "production"
+      //             ? "/app/"
+      //             : __dirname + "/../"
+      //         }customStatic/logo.svg`,
+      //         outputPath: "public/logo.svg",
+      //       },
+      //     ];
+      //   },
+      // ],
     },
     server: {
       ...(process.env.SERVER_CORS_ORIGINS

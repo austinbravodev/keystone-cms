@@ -7,3 +7,7 @@ npm-debug.log*
 public
 oldDatabases
 notes
+admin/configOld.tsx
+keystone.db
+schema.graphql
+schema.prisma
