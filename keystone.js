@@ -136,7 +136,7 @@ export default withAuth(
       //           process.env.NODE_ENV === "production"
       //             ? "/app/"
       //             : __dirname + "/../"
-      //         }customStatic/script.js`,
+      //         }custom-static/script.js`,
       //         outputPath: "public/script.js",
       //       },
       //       {
@@ -145,7 +145,7 @@ export default withAuth(
       //           process.env.NODE_ENV === "production"
       //             ? "/app/"
       //             : __dirname + "/../"
-      //         }customStatic/logo.svg`,
+      //         }custom-static/logo.svg`,
       //         outputPath: "public/logo.svg",
       //       },
       //     ];
